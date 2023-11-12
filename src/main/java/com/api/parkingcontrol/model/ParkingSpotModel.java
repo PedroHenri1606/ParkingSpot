@@ -8,7 +8,7 @@ import java.time.ZoneId;
 import java.util.UUID;
 
 @Entity
-@Table(name = "tb_parking_spot")
+@Table(name = "TB_PARKING_SPOT")
 public class ParkingSpotModel implements Serializable {
     private static final Long serialVerisonUID = 1L;
 

@@ -57,7 +57,7 @@ public class ParkingSpotController {
             return ResponseEntity.status(HttpStatus.CREATED).body(service.save(parkingSpotDTO));
 
         } catch (Exception e){
-            throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "Error, " + e.getMessage());
+            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("Error, " + e.getMessage());
         }
     }
 
